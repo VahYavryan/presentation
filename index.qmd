@@ -1,60 +1,135 @@
 ---
-title: "Citi BIke Jersy"
-subtitle: "Analysis And Visualization"
+title: "Citi Bike Jersey City"
+subtitle: "A Python Data Analysis Project"
 author: "Vahe Yavryan"
 date: last-modified
-image_path: "img/"
 format:
-  revealjs: 
+  revealjs:
+    theme: [night, styles.scss]
     touch: true
-    slide-number: false
     chalkboard: true
-
-    preview-links: auto
-    width: 1500
-    transition: slide
-    logo: img/favicon.png
-    include-in-header:
-      - text: |
-          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-          <style>
-            .icon-xxl { font-size: 84px; }
-            .icon-xl  { font-size: 64px; }
-            .icon-lg  { font-size: 48px; }
-            .muted { opacity: .8 }
-            .pill { border-radius: 10px; }
-            .circle { border-radius: 50%; }
-          </style>
-    
+    transition: fade
+    logo: img/logo.svg
+    footer: "Citi Bike JC Analysis"
 ---
 
-# MAIN TITLE I
+# Introduction
 
-## Objective {.smaller}
+## Project Goal
 
-- **Transform** data into a **strategic banking asset**  
-- Eliminate **data silos** and enable **integrated decision-making**  
-- Build a **scalable, governed, and AI-ready organization**
+- Analyze Citi Bike trip data from Jersey City
+- End-to-end pipeline: from data acquisition to geospatial insights
+- Built with Python (pandas, plotly, folium)
 
-## The Core Problem: Data Silos {.smaller}
+## Questions We're Answering
 
-- **Fragmented systems across:**
-  - Core banking  
-  - CRM  
-  - Risk  
-  - Marketing  
-  - Other Sources
+- When and where do most trips happen?
+- How does weather affect ridership?
+- Which stations are the most active?
 
-- **Consequences:**
-  - Inconsistent KPIs  
-  - Slow decision-making  
-  - Poor customer experience  
-  - Limited AI capability 
-  - Missing Single Source of Truth 
+# Ridership Patterns
 
-## Data Silos in Banking {.smaller}
+## Rides per Month
+
+![](img/number_rides_per_month.png){width="80%" fig-align="center"}
+
+::: {.notes}
+Ridership grows steadily from winter into a September peak (~115k), then drops off through late fall.
+:::
+
+## Rides per Season
+
+![](img/num_of_rides_per_season.png){width="80%" fig-align="center"}
+
+## Rides per Day of Week
+
+![](img/num_rides_per_day_of_weeks.png){width="80%" fig-align="center"}
+
+## Rides per Time of Day
+
+![](img/num_rides_per_time_of_day.png){width="80%" fig-align="center"}
+
+# Weather Impact
+
+## Daily Average Temperature Over Time
+
+![](img/daily_avg_tem_over_time.png){width="80%" fig-align="center"}
+
+## Rides vs. Temperature
+
+![](img/rides_vs_temp.png){width="75%" fig-align="center"}
+
+## Rides vs. Precipitation
+
+![](img/rides_vs_precipitation_sum.png){width="75%" fig-align="center"}
+
+## Rides vs. Wind Speed
+
+![](img/rides_vs_wind.png){width="75%" fig-align="center"}
+
+# Station Analysis
+
+## Top 10 Start Stations by Departures
+
+![](img/top_10_start_stations_by_num_of_dep.png){width="85%" fig-align="center"}
+
+## Station Count Map
+
+<iframe src="img/station_count_map.html" width="100%" height="500" style="border:none;"></iframe>
+
+## Departures Map
+
+<iframe src="img/departures_map.html" width="100%" height="500" style="border:none;"></iframe>
+
+## Arrivals Map
+
+<iframe src="img/arrivals_map.html" width="100%" height="500" style="border:none;"></iframe>
+
+## Average Activity Map
+
+<iframe src="img/avg_activity_map.html" width="100%" height="500" style="border:none;"></iframe>
+
+## Total Activity Map
+
+<iframe src="img/total_activity_map.html" width="100%" height="500" style="border:none;"></iframe>
+
+## Busiest Routes
+
+<iframe src="img/line_color_map.html" width="100%" height="500" style="border:none;"></iframe>
+
+# Conclusions
+
+## Key Findings
+
+- Ridership peaks in **summer** (~310k rides) and is lowest in **winter** (~140k)
+- **Friday** is the busiest day; **Sunday** is the quietest
+- Most rides happen **midday**, dropping sharply at night
+- Strong positive correlation between **temperature and ridership**
+- Ridership decreases with higher **precipitation** and **wind speed**
+- **Grove St PATH** is by far the top station, with ~45k departures — nearly double the next busiest station
 
 
-# MAIN TITLE III
+# Thank You
 
-[Linkedin](https://www.linkedin.com/in/khovhannisyan91/)
+# Contact
+
+## Let's Connect
+
+<div style="display: flex; justify-content: space-around; margin-top: 2em; gap: 1em;">
+
+<div style="flex: 1; text-align: left; word-break: break-word;">
+<strong>LinkedIn</strong><br>
+<a href="https://www.linkedin.com/in/vahe-yavryan-a2127a409/">linkedin.com/in/VahYavryan</a>
+</div>
+
+<div style="flex: 1; text-align: left; word-break: break-word;">
+<strong>GitHub</strong><br>
+<a href="https://github.com/VahYavryan">github.com/VahYavryan</a>
+</div>
+
+<div style="flex: 1; text-align: left; word-break: break-word;">
+<strong>Email</strong><br>
+vahyavryan5@gmail.com
+</div>
+
+</div>
