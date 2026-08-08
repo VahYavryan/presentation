@@ -1,0 +1,55 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200">
+  <defs>
+    <linearGradient id="teal" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#4fd1c5"/>
+      <stop offset="100%" stop-color="#38b2ac"/>
+    </linearGradient>
+  </defs>
+
+  <!-- background circle -->
+  <circle cx="100" cy="100" r="96" fill="#0f1419" stroke="url(#teal)" stroke-width="4"/>
+
+  <!-- bike wheels -->
+  <circle cx="62" cy="132" r="30" fill="none" stroke="url(#teal)" stroke-width="6"/>
+  <circle cx="138" cy="132" r="30" fill="none" stroke="url(#teal)" stroke-width="6"/>
+
+  <!-- wheel hubs -->
+  <circle cx="62" cy="132" r="4" fill="#4fd1c5"/>
+  <circle cx="138" cy="132" r="4" fill="#4fd1c5"/>
+
+  <!-- frame -->
+  <g stroke="url(#teal)" stroke-width="6" stroke-linecap="round" fill="none">
+    <!-- seat post to bottom bracket -->
+    <line x1="100" y1="70" x2="82" y2="132"/>
+    <!-- bottom bracket to rear wheel -->
+    <line x1="82" y1="132" x2="62" y2="132"/>
+    <!-- bottom bracket to front fork base -->
+    <line x1="82" y1="132" x2="118" y2="132"/>
+    <!-- seat post to handlebar stem -->
+    <line x1="100" y1="70" x2="126" y2="90"/>
+    <!-- top tube -->
+    <line x1="100" y1="70" x2="62" y2="132"/>
+    <!-- front fork -->
+    <line x1="126" y1="90" x2="138" y2="132"/>
+    <!-- seat post -->
+    <line x1="100" y1="70" x2="94" y2="58"/>
+    <!-- handlebar -->
+    <line x1="126" y1="90" x2="140" y2="84"/>
+  </g>
+
+  <!-- seat -->
+  <ellipse cx="94" cy="56" rx="10" ry="4" fill="#4fd1c5"/>
+
+  <!-- pedal crank -->
+  <circle cx="82" cy="132" r="5" fill="#4fd1c5"/>
+
+  <!-- city skyline accent under wheels -->
+  <g fill="#4fd1c5" opacity="0.5">
+    <rect x="20" y="168" width="8" height="14"/>
+    <rect x="30" y="160" width="8" height="22"/>
+    <rect x="40" y="172" width="8" height="10"/>
+    <rect x="150" y="164" width="8" height="18"/>
+    <rect x="160" y="172" width="8" height="10"/>
+    <rect x="170" y="158" width="8" height="24"/>
+  </g>
+</svg>

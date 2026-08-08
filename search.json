@@ -1,23 +1,135 @@
 [
   {
-    "objectID": "index.html#objective",
-    "href": "index.html#objective",
-    "title": "Citi BIke Jersy",
-    "section": "Objective",
-    "text": "Objective\n\nTransform data into a strategic banking asset\n\nEliminate data silos and enable integrated decision-making\n\nBuild a scalable, governed, and AI-ready organization"
+    "objectID": "index.html#project-goal",
+    "href": "index.html#project-goal",
+    "title": "Citi Bike Jersey City",
+    "section": "Project Goal",
+    "text": "Project Goal\n\nAnalyze Citi Bike trip data from Jersey City\nEnd-to-end pipeline: from data acquisition to geospatial insights\nBuilt with Python (pandas, plotly, folium)"
   },
   {
-    "objectID": "index.html#the-core-problem-data-silos",
-    "href": "index.html#the-core-problem-data-silos",
-    "title": "Citi BIke Jersy",
-    "section": "The Core Problem: Data Silos",
-    "text": "The Core Problem: Data Silos\n\nFragmented systems across:\n\nCore banking\n\nCRM\n\nRisk\n\nMarketing\n\nOther Sources\n\nConsequences:\n\nInconsistent KPIs\n\nSlow decision-making\n\nPoor customer experience\n\nLimited AI capability\nMissing Single Source of Truth"
+    "objectID": "index.html#questions-were-answering",
+    "href": "index.html#questions-were-answering",
+    "title": "Citi Bike Jersey City",
+    "section": "Questions We’re Answering",
+    "text": "Questions We’re Answering\n\nWhen and where do most trips happen?\nHow does weather affect ridership?\nWhich stations are the most active?"
   },
   {
-    "objectID": "index.html#data-silos-in-banking",
-    "href": "index.html#data-silos-in-banking",
-    "title": "Citi BIke Jersy",
-    "section": "Data Silos in Banking",
-    "text": "Data Silos in Banking"
+    "objectID": "index.html#rides-per-month",
+    "href": "index.html#rides-per-month",
+    "title": "Citi Bike Jersey City",
+    "section": "Rides per Month",
+    "text": "Rides per Month\n\n\nRidership grows steadily from winter into a September peak (~115k), then drops off through late fall."
+  },
+  {
+    "objectID": "index.html#rides-per-season",
+    "href": "index.html#rides-per-season",
+    "title": "Citi Bike Jersey City",
+    "section": "Rides per Season",
+    "text": "Rides per Season"
+  },
+  {
+    "objectID": "index.html#rides-per-day-of-week",
+    "href": "index.html#rides-per-day-of-week",
+    "title": "Citi Bike Jersey City",
+    "section": "Rides per Day of Week",
+    "text": "Rides per Day of Week"
+  },
+  {
+    "objectID": "index.html#rides-per-time-of-day",
+    "href": "index.html#rides-per-time-of-day",
+    "title": "Citi Bike Jersey City",
+    "section": "Rides per Time of Day",
+    "text": "Rides per Time of Day"
+  },
+  {
+    "objectID": "index.html#daily-average-temperature-over-time",
+    "href": "index.html#daily-average-temperature-over-time",
+    "title": "Citi Bike Jersey City",
+    "section": "Daily Average Temperature Over Time",
+    "text": "Daily Average Temperature Over Time"
+  },
+  {
+    "objectID": "index.html#rides-vs.-temperature",
+    "href": "index.html#rides-vs.-temperature",
+    "title": "Citi Bike Jersey City",
+    "section": "Rides vs. Temperature",
+    "text": "Rides vs. Temperature"
+  },
+  {
+    "objectID": "index.html#rides-vs.-precipitation",
+    "href": "index.html#rides-vs.-precipitation",
+    "title": "Citi Bike Jersey City",
+    "section": "Rides vs. Precipitation",
+    "text": "Rides vs. Precipitation"
+  },
+  {
+    "objectID": "index.html#rides-vs.-wind-speed",
+    "href": "index.html#rides-vs.-wind-speed",
+    "title": "Citi Bike Jersey City",
+    "section": "Rides vs. Wind Speed",
+    "text": "Rides vs. Wind Speed"
+  },
+  {
+    "objectID": "index.html#top-10-start-stations-by-departures",
+    "href": "index.html#top-10-start-stations-by-departures",
+    "title": "Citi Bike Jersey City",
+    "section": "Top 10 Start Stations by Departures",
+    "text": "Top 10 Start Stations by Departures"
+  },
+  {
+    "objectID": "index.html#station-count-map",
+    "href": "index.html#station-count-map",
+    "title": "Citi Bike Jersey City",
+    "section": "Station Count Map",
+    "text": "Station Count Map"
+  },
+  {
+    "objectID": "index.html#departures-map",
+    "href": "index.html#departures-map",
+    "title": "Citi Bike Jersey City",
+    "section": "Departures Map",
+    "text": "Departures Map"
+  },
+  {
+    "objectID": "index.html#arrivals-map",
+    "href": "index.html#arrivals-map",
+    "title": "Citi Bike Jersey City",
+    "section": "Arrivals Map",
+    "text": "Arrivals Map"
+  },
+  {
+    "objectID": "index.html#average-activity-map",
+    "href": "index.html#average-activity-map",
+    "title": "Citi Bike Jersey City",
+    "section": "Average Activity Map",
+    "text": "Average Activity Map"
+  },
+  {
+    "objectID": "index.html#total-activity-map",
+    "href": "index.html#total-activity-map",
+    "title": "Citi Bike Jersey City",
+    "section": "Total Activity Map",
+    "text": "Total Activity Map"
+  },
+  {
+    "objectID": "index.html#busiest-routes",
+    "href": "index.html#busiest-routes",
+    "title": "Citi Bike Jersey City",
+    "section": "Busiest Routes",
+    "text": "Busiest Routes"
+  },
+  {
+    "objectID": "index.html#key-findings",
+    "href": "index.html#key-findings",
+    "title": "Citi Bike Jersey City",
+    "section": "Key Findings",
+    "text": "Key Findings\n\nRidership peaks in summer (~310k rides) and is lowest in winter (~140k)\nFriday is the busiest day; Sunday is the quietest\nMost rides happen midday, dropping sharply at night\nStrong positive correlation between temperature and ridership\nRidership decreases with higher precipitation and wind speed\nGrove St PATH is by far the top station, with ~45k departures — nearly double the next busiest station"
+  },
+  {
+    "objectID": "index.html#lets-connect",
+    "href": "index.html#lets-connect",
+    "title": "Citi Bike Jersey City",
+    "section": "Let’s Connect",
+    "text": "Let’s Connect\n\n\nLinkedIn linkedin.com/in/VahYavryan\n\n\nGitHub github.com/VahYavryan\n\n\nEmail vahyavryan5@gmail.com"
   }
 ]

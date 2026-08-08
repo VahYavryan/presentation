@@ -6,12 +6,12 @@
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
 <link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
 <link href="site_libs/quarto-html/light-border.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-e26003cea8cd680ca0c55a263523d882.css" rel="stylesheet" id="quarto-text-highlighting-styles"><meta charset="utf-8">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-dark-d166b450ba5a8e9f7a0ab969bf6592c1.css" rel="stylesheet" id="quarto-text-highlighting-styles"><meta charset="utf-8">
   <meta name="generator" content="quarto-1.6.39">
 
   <meta name="author" content="Vahe Yavryan">
   <meta name="dcterms.date" content="2026-08-08">
-  <title>Data Vision – Citi BIke Jersy</title>
+  <title>Data Vision – Citi Bike Jersey City</title>
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
@@ -30,7 +30,7 @@
       vertical-align: middle;
     }
   </style>
-  <link rel="stylesheet" href="site_libs/revealjs/dist/theme/quarto-bbe7401fe57d4b791b917637bb662036.css">
+  <link rel="stylesheet" href="site_libs/revealjs/dist/theme/quarto-5a552d04818f6cd2b505b1e73c98769c.css">
   <link href="site_libs/revealjs/plugin/quarto-line-highlight/line-highlight.css" rel="stylesheet">
   <link href="site_libs/revealjs/plugin/reveal-menu/menu.css" rel="stylesheet">
   <link href="site_libs/revealjs/plugin/reveal-menu/quarto-menu.css" rel="stylesheet">
@@ -124,23 +124,14 @@
       margin-right: 0; 
     }
   </style>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-  <style>
-    .icon-xxl { font-size: 84px; }
-    .icon-xl  { font-size: 64px; }
-    .icon-lg  { font-size: 48px; }
-    .muted { opacity: .8 }
-    .pill { border-radius: 10px; }
-    .circle { border-radius: 50%; }
-  </style>
 </head>
-<body class="quarto-light">
+<body class="quarto-dark">
   <div class="reveal">
     <div class="slides">
 
 <section id="title-slide" class="quarto-title-block center">
-  <h1 class="title">Citi BIke Jersy</h1>
-  <p class="subtitle">Analysis And Visualization</p>
+  <h1 class="title">Citi Bike Jersey City</h1>
+  <p class="subtitle">A Python Data Analysis Project</p>
 
 <div class="quarto-title-authors">
 <div class="quarto-title-author">
@@ -153,62 +144,167 @@ Vahe Yavryan
   <p class="date">2026-08-08</p>
 </section>
 <section>
-<section id="main-title-i" class="title-slide slide level1 center">
-<h1>MAIN TITLE I</h1>
+<section id="introduction" class="title-slide slide level1 center">
+<h1>Introduction</h1>
 
 </section>
-<section id="objective" class="slide level2 smaller">
-<h2>Objective</h2>
+<section id="project-goal" class="slide level2">
+<h2>Project Goal</h2>
 <ul>
-<li><strong>Transform</strong> data into a <strong>strategic banking asset</strong><br>
-</li>
-<li>Eliminate <strong>data silos</strong> and enable <strong>integrated decision-making</strong><br>
-</li>
-<li>Build a <strong>scalable, governed, and AI-ready organization</strong></li>
+<li>Analyze Citi Bike trip data from Jersey City</li>
+<li>End-to-end pipeline: from data acquisition to geospatial insights</li>
+<li>Built with Python (pandas, plotly, folium)</li>
 </ul>
 </section>
-<section id="the-core-problem-data-silos" class="slide level2 smaller">
-<h2>The Core Problem: Data Silos</h2>
+<section id="questions-were-answering" class="slide level2">
+<h2>Questions We’re Answering</h2>
 <ul>
-<li><strong>Fragmented systems across:</strong>
-<ul>
-<li>Core banking<br>
-</li>
-<li>CRM<br>
-</li>
-<li>Risk<br>
-</li>
-<li>Marketing<br>
-</li>
-<li>Other Sources</li>
-</ul></li>
-<li><strong>Consequences:</strong>
-<ul>
-<li>Inconsistent KPIs<br>
-</li>
-<li>Slow decision-making<br>
-</li>
-<li>Poor customer experience<br>
-</li>
-<li>Limited AI capability</li>
-<li>Missing Single Source of Truth</li>
-</ul></li>
+<li>When and where do most trips happen?</li>
+<li>How does weather affect ridership?</li>
+<li>Which stations are the most active?</li>
 </ul>
-</section>
-<section id="data-silos-in-banking" class="slide level2 smaller">
-<h2>Data Silos in Banking</h2>
 </section></section>
-<section id="main-title-iii" class="title-slide slide level1 center">
-<h1>MAIN TITLE III</h1>
-<p><a href="https://www.linkedin.com/in/khovhannisyan91/">Linkedin</a></p>
-
+<section>
+<section id="ridership-patterns" class="title-slide slide level1 center">
+<h1>Ridership Patterns</h1>
 
 </section>
+<section id="rides-per-month" class="slide level2">
+<h2>Rides per Month</h2>
+
+<img data-src="img/number_rides_per_month.png" class="quarto-figure quarto-figure-center r-stretch" style="width:80.0%"><aside class="notes">
+<p>Ridership grows steadily from winter into a September peak (~115k), then drops off through late fall.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="rides-per-season" class="slide level2">
+<h2>Rides per Season</h2>
+
+<img data-src="img/num_of_rides_per_season.png" class="quarto-figure quarto-figure-center r-stretch" style="width:80.0%"></section>
+<section id="rides-per-day-of-week" class="slide level2">
+<h2>Rides per Day of Week</h2>
+
+<img data-src="img/num_rides_per_day_of_weeks.png" class="quarto-figure quarto-figure-center r-stretch" style="width:80.0%"></section>
+<section id="rides-per-time-of-day" class="slide level2">
+<h2>Rides per Time of Day</h2>
+
+<img data-src="img/num_rides_per_time_of_day.png" class="quarto-figure quarto-figure-center r-stretch" style="width:80.0%"></section></section>
+<section>
+<section id="weather-impact" class="title-slide slide level1 center">
+<h1>Weather Impact</h1>
+
+</section>
+<section id="daily-average-temperature-over-time" class="slide level2">
+<h2>Daily Average Temperature Over Time</h2>
+
+<img data-src="img/daily_avg_tem_over_time.png" class="quarto-figure quarto-figure-center r-stretch" style="width:80.0%"></section>
+<section id="rides-vs.-temperature" class="slide level2">
+<h2>Rides vs.&nbsp;Temperature</h2>
+
+<img data-src="img/rides_vs_temp.png" class="quarto-figure quarto-figure-center r-stretch" style="width:75.0%"></section>
+<section id="rides-vs.-precipitation" class="slide level2">
+<h2>Rides vs.&nbsp;Precipitation</h2>
+
+<img data-src="img/rides_vs_precipitation_sum.png" class="quarto-figure quarto-figure-center r-stretch" style="width:75.0%"></section>
+<section id="rides-vs.-wind-speed" class="slide level2">
+<h2>Rides vs.&nbsp;Wind Speed</h2>
+
+<img data-src="img/rides_vs_wind.png" class="quarto-figure quarto-figure-center r-stretch" style="width:75.0%"></section></section>
+<section>
+<section id="station-analysis" class="title-slide slide level1 center">
+<h1>Station Analysis</h1>
+
+</section>
+<section id="top-10-start-stations-by-departures" class="slide level2">
+<h2>Top 10 Start Stations by Departures</h2>
+
+<img data-src="img/top_10_start_stations_by_num_of_dep.png" class="quarto-figure quarto-figure-center r-stretch" style="width:85.0%"></section>
+<section id="station-count-map" class="slide level2">
+<h2>Station Count Map</h2>
+<iframe src="img/station_count_map.html" width="100%" height="500" style="border:none;">
+</iframe>
+</section>
+<section id="departures-map" class="slide level2">
+<h2>Departures Map</h2>
+<iframe src="img/departures_map.html" width="100%" height="500" style="border:none;">
+</iframe>
+</section>
+<section id="arrivals-map" class="slide level2">
+<h2>Arrivals Map</h2>
+<iframe src="img/arrivals_map.html" width="100%" height="500" style="border:none;">
+</iframe>
+</section>
+<section id="average-activity-map" class="slide level2">
+<h2>Average Activity Map</h2>
+<iframe src="img/avg_activity_map.html" width="100%" height="500" style="border:none;">
+</iframe>
+</section>
+<section id="total-activity-map" class="slide level2">
+<h2>Total Activity Map</h2>
+<iframe src="img/total_activity_map.html" width="100%" height="500" style="border:none;">
+</iframe>
+</section>
+<section id="busiest-routes" class="slide level2">
+<h2>Busiest Routes</h2>
+<iframe src="img/line_color_map.html" width="100%" height="500" style="border:none;">
+</iframe>
+</section></section>
+<section>
+<section id="conclusions" class="title-slide slide level1 center">
+<h1>Conclusions</h1>
+
+</section>
+<section id="key-findings" class="slide level2">
+<h2>Key Findings</h2>
+<ul>
+<li>Ridership peaks in <strong>summer</strong> (~310k rides) and is lowest in <strong>winter</strong> (~140k)</li>
+<li><strong>Friday</strong> is the busiest day; <strong>Sunday</strong> is the quietest</li>
+<li>Most rides happen <strong>midday</strong>, dropping sharply at night</li>
+<li>Strong positive correlation between <strong>temperature and ridership</strong></li>
+<li>Ridership decreases with higher <strong>precipitation</strong> and <strong>wind speed</strong></li>
+<li><strong>Grove St PATH</strong> is by far the top station, with ~45k departures — nearly double the next busiest station</li>
+</ul>
+</section></section>
+<section id="thank-you" class="title-slide slide level1 center">
+<h1>Thank You</h1>
+
+</section>
+
+<section>
+<section id="contact" class="title-slide slide level1 center">
+<h1>Contact</h1>
+
+</section>
+<section id="lets-connect" class="slide level2">
+<h2>Let’s Connect</h2>
+<div style="display: flex; justify-content: space-around; margin-top: 2em; gap: 1em;">
+<div style="flex: 1; text-align: left; word-break: break-word;">
+<p><strong>LinkedIn</strong><br> <a href="https://www.linkedin.com/in/vahe-yavryan-a2127a409/">linkedin.com/in/VahYavryan</a></p>
+</div>
+<div style="flex: 1; text-align: left; word-break: break-word;">
+<p><strong>GitHub</strong><br> <a href="https://github.com/VahYavryan">github.com/VahYavryan</a></p>
+</div>
+<div style="flex: 1; text-align: left; word-break: break-word;">
+<p><strong>Email</strong><br> vahyavryan5@gmail.com</p>
+</div>
+</div>
+
+
+</section></section>
     </div>
   <div class="quarto-auto-generated-content" style="display: none;">
-<p><img src="img/favicon.png" class="slide-logo"></p>
+<p><img src="img/logo.svg" class="slide-logo"></p>
 <div class="footer footer-default">
-
+<p>Citi Bike JC Analysis</p>
 </div>
 </div></div>
 
@@ -235,7 +331,7 @@ Vahe Yavryan
       // https://revealjs.com/config/
       Reveal.initialize({
 'controlsAuto': true,
-'previewLinksAuto': true,
+'previewLinksAuto': false,
 'pdfSeparateFragments': false,
 'autoAnimateEasing': "ease",
 'autoAnimateDuration': 1,
@@ -368,7 +464,7 @@ Vahe Yavryan
         previewLinks: false,
 
         // Transition style (none/fade/slide/convex/concave/zoom)
-        transition: 'slide',
+        transition: 'fade',
 
         // Transition speed (default/fast/slow)
         transitionSpeed: 'default',
@@ -388,7 +484,7 @@ Vahe Yavryan
         // The "normal" size of the presentation, aspect ratio will be preserved
         // when the presentation is scaled to fit different resolutions. Can be
         // specified using percentage units.
-        width: 1500,
+        width: 1050,
 
         height: 700,
 

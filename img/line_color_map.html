@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_29b99411d2999a9e9bc9022b26c554cf {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+
+            <style>html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            </style>
+
+            <style>#map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+
+            <script>
+                L_NO_TOUCH = false;
+                L_DISABLE_3D = false;
+            </script>
+
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_29b99411d2999a9e9bc9022b26c554cf" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_29b99411d2999a9e9bc9022b26c554cf = L.map(
+                "map_29b99411d2999a9e9bc9022b26c554cf",
+                {
+                    center: [40.734012258630905, -74.00137516113631],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 12,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_f4c3f9d181202dc26f064c440a41d441 = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 19,
+  "maxNativeZoom": 19,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_f4c3f9d181202dc26f064c440a41d441.addTo(map_29b99411d2999a9e9bc9022b26c554cf);
+        
+    
+            var poly_line_8244b7c7214754361e0974753836f727 = L.polyline(
+                [[40.73593758446329, -74.03030455112457], [40.73520838045357, -74.04696375131607]],
+                {"bubblingMouseEvents": true, "color": "darkblue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "darkblue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.9, "smoothFactor": 1.0, "stroke": true, "weight": 9.0}
+            ).addTo(map_29b99411d2999a9e9bc9022b26c554cf);
+        
+    
+        var popup_3a658db4fbd7df7158cfb3499287adcc = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_0a62b8051850f85da42bc071520daa8f = $(`<div id="html_0a62b8051850f85da42bc071520daa8f" style="width: 100.0%; height: 100.0%;">         <b>Hoboken Terminal - Hudson St & Hudson Pl → Hoboken Ave at Monmouth St</b><br>         Number of Rides: 4559         </div>`)[0];
+                popup_3a658db4fbd7df7158cfb3499287adcc.setContent(html_0a62b8051850f85da42bc071520daa8f);
+            
+        
+
+        poly_line_8244b7c7214754361e0974753836f727.bindPopup(popup_3a658db4fbd7df7158cfb3499287adcc)
+        ;
+
+        
+    
+    
+            var poly_line_bc16725a33c75c001ccb78cf84d6d2d6 = L.polyline(
+                [[40.7253399253558, -74.06762212514877], [40.73100888698729, -74.06443700194359]],
+                {"bubblingMouseEvents": true, "color": "darkblue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "darkblue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.9, "smoothFactor": 1.0, "stroke": true, "weight": 8.556042991884185}
+            ).addTo(map_29b99411d2999a9e9bc9022b26c554cf);
+        
+    
+        var popup_2f9ffc34f8fd353c83649ed6f1447085 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_064f791e51b6e40ad618a7ad4c395146 = $(`<div id="html_064f791e51b6e40ad618a7ad4c395146" style="width: 100.0%; height: 100.0%;">         <b>McGinley Square → Bergen Ave & Sip Ave</b><br>         Number of Rides: 4306         </div>`)[0];
+                popup_2f9ffc34f8fd353c83649ed6f1447085.setContent(html_064f791e51b6e40ad618a7ad4c395146);
+            
+        
+
+        poly_line_bc16725a33c75c001ccb78cf84d6d2d6.bindPopup(popup_2f9ffc34f8fd353c83649ed6f1447085)
+        ;
+
+        
+    
+    
+            var poly_line_ad9e1cdb267b9eb303b12c53afeb1e78 = L.polyline(
+                [[40.71941, -74.04309], [40.71458403535893, -74.04281705617905]],
+                {"bubblingMouseEvents": true, "color": "darkblue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "darkblue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.9, "smoothFactor": 1.0, "stroke": true, "weight": 8.248958104847555}
+            ).addTo(map_29b99411d2999a9e9bc9022b26c554cf);
+        
+    
+        var popup_5aef115731f982e81e24212ab6f0f283 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_c1f10f804257754df94e7f56c323b866 = $(`<div id="html_c1f10f804257754df94e7f56c323b866" style="width: 100.0%; height: 100.0%;">         <b>Grove St PATH → Marin Light Rail</b><br>         Number of Rides: 4131         </div>`)[0];
+                popup_5aef115731f982e81e24212ab6f0f283.setContent(html_c1f10f804257754df94e7f56c323b866);
+            
+        
+
+        poly_line_ad9e1cdb267b9eb303b12c53afeb1e78.bindPopup(popup_5aef115731f982e81e24212ab6f0f283)
+        ;
+
+        
+    
+    
+            var poly_line_6c8de385805dc2a44662f0183377bb7b = L.polyline(
+                [[40.71458403535893, -74.04281705617905], [40.71941, -74.04309]],
+                {"bubblingMouseEvents": true, "color": "darkblue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "darkblue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.9, "smoothFactor": 1.0, "stroke": true, "weight": 7.7225268699276155}
+            ).addTo(map_29b99411d2999a9e9bc9022b26c554cf);
+        
+    
+        var popup_16ce6afc7728f9b439259c4a619bc5b0 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_2d9c9b74fd0eb3507e04ffd99cd4540f = $(`<div id="html_2d9c9b74fd0eb3507e04ffd99cd4540f" style="width: 100.0%; height: 100.0%;">         <b>Marin Light Rail → Grove St PATH</b><br>         Number of Rides: 3831         </div>`)[0];
+                popup_16ce6afc7728f9b439259c4a619bc5b0.setContent(html_2d9c9b74fd0eb3507e04ffd99cd4540f);
+            
+        
+
+        poly_line_6c8de385805dc2a44662f0183377bb7b.bindPopup(popup_16ce6afc7728f9b439259c4a619bc5b0)
+        ;
+
+        
+    
+    
+            var poly_line_82ef69bcc61abc45eaabbaac05afe9b5 = L.polyline(
+                [[40.71941, -74.04309], [40.7112423, -74.0557013]],
+                {"bubblingMouseEvents": true, "color": "darkblue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "darkblue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.9, "smoothFactor": 1.0, "stroke": true, "weight": 7.580390436499233}
+            ).addTo(map_29b99411d2999a9e9bc9022b26c554cf);
+        
+    
+        var popup_0e0a8454caffd6b0a70cedfaae462210 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_a1d6d3a83f11ad72877e89f78adf6cd5 = $(`<div id="html_a1d6d3a83f11ad72877e89f78adf6cd5" style="width: 100.0%; height: 100.0%;">         <b>Grove St PATH → Liberty Light Rail</b><br>         Number of Rides: 3750         </div>`)[0];
+                popup_0e0a8454caffd6b0a70cedfaae462210.setContent(html_a1d6d3a83f11ad72877e89f78adf6cd5);
+            
+        
+
+        poly_line_82ef69bcc61abc45eaabbaac05afe9b5.bindPopup(popup_0e0a8454caffd6b0a70cedfaae462210)
+        ;
+
+        
+    
+    
+            tile_layer_f4c3f9d181202dc26f064c440a41d441.addTo(map_29b99411d2999a9e9bc9022b26c554cf);
+        
+</script>
+</html>
