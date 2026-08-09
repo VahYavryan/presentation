@@ -5,7 +5,7 @@ author: "Vahe Yavryan"
 date: last-modified
 format:
   revealjs:
-    theme: [light, styles.scss]
+    theme: [default, styles.scss]
     touch: true
     chalkboard: true
     transition: fade

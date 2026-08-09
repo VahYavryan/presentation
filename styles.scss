@@ -1,9 +1,9 @@
 /*-- scss:defaults --*/
-$body-bg: #0f1419;
-$body-color: #e8e8e8;
-$link-color: #4fd1c5;
+$body-bg: #ffffff;
+$body-color: #1a202c;
+$link-color: #0d9488;
 
-$presentation-heading-color: #4fd1c5;
+$presentation-heading-color: #0d9488;
 $presentation-heading-font: "Helvetica Neue", Helvetica, Arial, sans-serif;
 
 /*-- scss:rules --*/
@@ -14,35 +14,35 @@ $presentation-heading-font: "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
 .reveal h1 {
-  color: #4fd1c5;
-  border-bottom: 3px solid #4fd1c5;
+  color: #0d9488;
+  border-bottom: 3px solid #0d9488;
   padding-bottom: 0.2em;
 }
 
 .reveal h2 {
-  color: #f5f5f5;
+  color: #1a202c;
 }
 
-// Frame charts/maps in a white rounded card so plotly/folium output
-// (white background) reads cleanly on the dark slide background
+// Light frame around charts/maps so they sit cleanly on the white background
 .reveal img,
 .reveal iframe {
-  background: white;
+  border: 1px solid #e2e8f0;
   border-radius: 10px;
-  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.4);
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.08);
 }
 
 .reveal .slide-footer,
 .reveal .slide-number {
-  color: #4fd1c5;
+  color: #0d9488;
   opacity: 0.7;
 }
 
 .reveal ul li,
 .reveal ol li {
   margin-bottom: 0.4em;
+  color: #2d3748;
 }
 
 .reveal strong {
-  color: #4fd1c5;
+  color: #0d9488;
 }
